@@ -30,3 +30,5 @@ Route::post('/recipes',[App\Http\Controllers\RecipesController::class, 'store'])
 //Route::resource('recipes', RecipesController::class);
 Route::put('recipes/update',[App\Http\Controllers\RecipesController::class, 'update'])->name('recipes.update');
 Route::delete('/recipes/{id}',[App\Http\Controllers\RecipesController::class, 'destroy'])->name('recipes.destroy');
+Route::get('/decisions/choise', [App\Http\Controllers\LevelsController::class, 'index'])->name('choise');
+Route::get('/decisions/solution', [App\Http\Controllers\SolutionsController::class, 'index'])->name('solution');

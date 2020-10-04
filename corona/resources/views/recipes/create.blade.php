@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-<h1>Създайте рецепта</h1>
-<center><div class="bgsvg_pos" style="width: 40%; background-color: rgba(0, 0, 0, 0.1);" >
+
+<center><div class="box" style="width: 40%; background-color: rgba(0, 0, 0, 0.8);" >
 	{!! Form::open(['route' => ['recipes.store']]) !!}	
 	<label class="description">Име на рецептата</label>
 	<p></p>

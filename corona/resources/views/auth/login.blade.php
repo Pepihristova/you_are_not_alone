@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card" style="background-color: rgba(0, 0, 0, 0.8); color: #fff; margin-top: 20%;">
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
@@ -42,11 +42,9 @@
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                    
 
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -59,7 +57,7 @@
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        
                                     </a>
                                 @endif
                             </div>

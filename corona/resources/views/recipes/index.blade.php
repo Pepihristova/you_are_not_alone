@@ -2,27 +2,27 @@
 @section('content')
 
 
-<h1>Hola</h1>
+
 
 	<center><div class="" style="width: 75%; margin-top: 10%">
-<table  class="table table-hover" border="1" bgcolor="white" style="color: #5F9EA0;">
+<table  class="table table-hover"  bgcolor="white" style="color: #fff;">
 
 	@foreach( $recipes_all as $recipe )
 		<tr>
 			<td bgcolor="white">
-				<label class="resultat" style="color: #5F9EA0;">{{ $recipe->name }}</label>
+				<label class="resultat" style="color: #fff;">{{ $recipe->name }}</label>
 			</td>
 			<td bgcolor="white">
-				<label class="resultat" style="color: #5F9EA0;">{{$recipe->type_meal->name}}</label>
+				<label class="resultat" style="color: #fff;">{{$recipe->type_meal->name}}</label>
 			</td>
 			<td bgcolor="white">
-				<label class="resultat" style="color: #5F9EA0;">{{$recipe->level->name}}</label>
+				<label class="resultat" style="color: #fff;">{{$recipe->level->name}}</label>
 			</td>
 			<td bgcolor="white">
-				<label class="resultat" style="color: #5F9EA0;">{{ $recipe->description }}</label>
+				<label class="resultat" style="color: #fff;">{{ $recipe->description }}</label>
 			</td>
 			<td bgcolor="white">
-				<label class="resultat" style="color: #5F9EA0;">{{ $recipe->is_valid }}</label>
+				<label class="resultat" style="color: #fff;">{{ $recipe->is_valid }}</label>
 			</td>
 			<td>
 				<a href="{{ route('recipes.edit', ['id' => $recipe->id]) }}" class="btn btn-warning">Промени</a>

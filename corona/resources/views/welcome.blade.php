@@ -39,7 +39,9 @@
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 
 
-               <h1>You are not alone!</h1>
+               <center><h1 style="color: #7C3626">You are not alone!</h1>
+               <img width="50%" src="{{ asset('/images/undraw_connected_8wvi.svg') }}">
+               <p><a href="{{url('decisions/choise')}}"style="color: #7C3626">Избери си рецепта</a></p></center>
                 </div>
 
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">

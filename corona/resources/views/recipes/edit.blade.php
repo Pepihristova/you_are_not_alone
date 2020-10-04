@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<center><div class="bgsvg_pos" style="width: 40%; background-color: rgba(0, 0, 0, 0.1);" >
+<center><div class="box" style="width: 40%; background-color: rgba(0, 0, 0, 0.8);" >
 {!! Form::model($recipe, ['route' => ['recipes.update', ['id' => $recipe->id]], 'method' => 'PUT']) !!}	
 <label class="description">Име на рецептата</label>
 <p>{!! Form::text('name', $recipe->name, ['placeholder'=>'recipe name here', 'class'=>'form-control']) !!}</p>
